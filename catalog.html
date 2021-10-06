@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Главная :: Frontend pack</title>
+    <!--
+    link(rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png")
+    link(rel="manifest" href="assets/site.webmanifest")
+    link(rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#ffffff")
+    link(rel="shortcut icon" href="assets/favicon.ico")
+    meta(name="msapplication-TileColor" content="#ffffff")
+    meta(name="msapplication-config" content="assets/browserconfig.xml")
+    meta(name="theme-color" content="#ffffff")
+    
+    -->
+    <meta name="description" content="Description">
+    <meta property="og:url" content="https://">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="title">
+    <meta property="twitter:title" content="title">
+    <meta property="og:description" content="description">
+    <meta property="twitter:description" content="description">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header__top">
+        <div class="container --flex --jcsb --aicn">
+          <div class="header__logo">
+            <button class="burger --visible-mobile">
+                  <svg class="svgsprite _burger">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#burger"></use>
+                  </svg>
+            </button><a href="index.html"> <img src="./assets/img/header/logo.svg" alt=""></a>
+          </div>
+          <div class="header__search --remove-mobile">
+                <div class="search">
+                  <input class="search__input" type="text" placeholder="Введите номер запчасти или VIN">
+                  <button class="search__btn"> 
+                        <svg class="svgsprite _search">
+                          <use xlink:href="assets/img/sprites/svgsprites.svg#search"></use>
+                        </svg>
+                  </button>
+                </div>
+          </div>
+          <div class="header__list"> <a class="header__item" href="#"> 
+              <div class="header__ico">
+                    <svg class="svgsprite _location">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#location"></use>
+                    </svg>
+              </div>
+              <div class="header__text"> Санкт-Петербург</div></a><a class="header__item --remove-mobile" href="#"> 
+              <div class="header__ico">
+                    <svg class="svgsprite _phone">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#phone"></use>
+                    </svg>
+              </div>
+              <div class="header__text"> <b>+7 (347) 229-46-45</b></div></a><a class="header__item btn-basket --visible-mobile" href="#"> 
+              <div class="header__ico">
+                    <svg class="svgsprite _basket_2">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#basket_2"></use>
+                    </svg>
+              </div>
+              <div class="btn-basket__numbers">5</div></a><a class="header__item" href="#"> 
+              <div class="header__ico">
+                    <svg class="svgsprite _user">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#user"></use>
+                    </svg>
+              </div>
+              <div class="header__text">Вход  /  Регистрация</div></a></div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container --flex --jcsb --aicn">
+          <button class="all-categories --open-menu">
+                <svg class="svgsprite _menu">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#menu"></use>
+                </svg>Все категории
+          </button>
+          <nav class="nav --remove-mobile"><a class="nav__link" href="">Запчасти для ТО</a><a class="nav__link" href="">Автомасла</a><a class="nav__link" href="catalog.html">Оригинальные запчасти</a><a class="nav__link --remove-tablet" href="">Неоригинальные запчасти</a><a class="nav__link --remove-tablet" href="">Лампочки</a><a class="nav__link --remove-tablet" href="">Аккумуляторы</a></nav><a class="btn-basket --remove-mobile" href="#"> 
+                <svg class="svgsprite _basket_2">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#basket_2"></use>
+                </svg>Корзина
+            <div class="btn-basket__numbers">5</div></a>
+          <div class="header__search --visible-mobile">
+                <div class="search">
+                  <input class="search__input" type="text" placeholder="Введите номер запчасти или VIN">
+                  <button class="search__btn"> 
+                        <svg class="svgsprite _search">
+                          <use xlink:href="assets/img/sprites/svgsprites.svg#search"></use>
+                        </svg>
+                  </button>
+                </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="menu"> 
+      <div class="menu__bg --close-menu"></div>
+      <div class="menu__panel container --flex">
+        <button class="all-categories active --close-menu">
+              <svg class="svgsprite _menu">
+                <use xlink:href="assets/img/sprites/svgsprites.svg#menu"></use>
+              </svg>Все категории
+        </button>
+        <div class="menu__links"><a class="menu__link" href="#">
+            <div class="menu__ico"> 
+                  <svg class="svgsprite _catalog-1">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#catalog-1"></use>
+                  </svg>
+            </div>
+            <div class="menu__text">Оригинальные запчасти</div></a><a class="menu__link" href="#">
+            <div class="menu__ico"> 
+                  <svg class="svgsprite _catalog-2">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#catalog-2"></use>
+                  </svg>
+            </div>
+            <div class="menu__text">Неоригинальные запчасти</div></a><a class="menu__link" href="#">
+            <div class="menu__ico"> 
+                  <svg class="svgsprite _catalog-3">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#catalog-3"></use>
+                  </svg>
+            </div>
+            <div class="menu__text">Запчасти ВАЗ, ГАЗ, КАМАЗ</div></a><a class="menu__link" href="#">
+            <div class="menu__ico"> 
+                  <svg class="svgsprite _catalog-4">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#catalog-4"></use>
+                  </svg>
+            </div>
+            <div class="menu__text">Кузовные запчасти</div></a><a class="menu__link" href="#">
+            <div class="menu__ico"> 
+                  <svg class="svgsprite _catalog-5">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#catalog-5"></use>
+                  </svg>
+            </div>
+            <div class="menu__text">Запчасти для ТО</div></a><a class="menu__link" href="#">
+            <div class="menu__ico"> 
+                  <svg class="svgsprite _catalog-6">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#catalog-6"></use>
+                  </svg>
+            </div>
+            <div class="menu__text">Автостёкла</div></a><a class="menu__link" href="#">
+            <div class="menu__ico"> 
+                  <svg class="svgsprite _catalog-7">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#catalog-7"></use>
+                  </svg>
+            </div>
+            <div class="menu__text">Автомасла</div></a><a class="menu__link" href="#">
+            <div class="menu__ico"> 
+                  <svg class="svgsprite _catalog-8">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#catalog-8"></use>
+                  </svg>
+            </div>
+            <div class="menu__text">Автохимия</div></a><a class="menu__link" href="#">
+            <div class="menu__ico"> 
+                  <svg class="svgsprite _catalog-9">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#catalog-9"></use>
+                  </svg>
+            </div>
+            <div class="menu__text">Диски</div></a><a class="menu__link" href="#">
+            <div class="menu__ico"> 
+                  <svg class="svgsprite _catalog-10">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#catalog-10"></use>
+                  </svg>
+            </div>
+            <div class="menu__text">Аккумуляторы</div></a><a class="menu__link" href="#">
+            <div class="menu__ico"> 
+                  <svg class="svgsprite _catalog-11">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#catalog-11"></use>
+                  </svg>
+            </div>
+            <div class="menu__text">Автолампы</div></a></div>
+        <div class="menu__banner"> 
+          <div class="menu__banner-wrap">
+            <div class="menu__banner-text">Автомасла №1 <br>от официальных <br>дилеров</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="content">
+      <section class="catalog-search section">
+        <div class="container"> 
+          <div class="title"> 
+            <h2>Каталоги оригинальных запчастей</h2>
+          </div>
+          <div class="catalog-search__list"> 
+            <div class="catalog-search__item">
+              <div class="catalog-search__name">Поиск модели по VIN-номеру:</div>
+                  <div class="search">
+                    <input class="search__input" type="text" placeholder="Введите VIN">
+                    <button class="search__btn --hover"> 
+                          <svg class="svgsprite _search">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#search"></use>
+                          </svg>
+                    </button>
+                  </div>
+              <div class="catalog-search__code">
+                 Например: <span>WAUBH54B11N111054</span></div>
+            </div>
+            <div class="catalog-search__item">
+              <div class="catalog-search__name">Поиск модели по коду/номеру кузова:</div>
+                  <div class="search">
+                    <input class="search__input" type="text" placeholder="Введите код/номер кузова">
+                    <button class="search__btn --hover"> 
+                          <svg class="svgsprite _search">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#search"></use>
+                          </svg>
+                    </button>
+                  </div>
+              <div class="catalog-search__code">
+                 Например:  <span>AGH30-0115914</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="catalogs section">
+        <div class="container"> 
+          <div class="title"> 
+            <h2>Поиск модели по каталогу производителя:</h2>
+          </div>
+          <div class="catalogs__wrap"> 
+            <div class="catalogs__row"> 
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">a</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">ABARTH </a><a class="catalog__link" href="#">Alfa Romeo </a><a class="catalog__link" href="#">Audi</a></div>
+              </div>
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">B</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">BMW Motorrad </a><a class="catalog__link" href="#">BMW</a><a class="catalog__link" href="#">Baw</a><a class="catalog__link" href="#">Buick</a></div>
+              </div>
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">C</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">Cadillac </a><a class="catalog__link" href="#">Chevrolet</a><a class="catalog__link" href="#">Chrysler</a><a class="catalog__link" href="#">Citroen</a></div>
+              </div>
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">D</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">Dacia</a><a class="catalog__link" href="#">Daewoo</a><a class="catalog__link" href="#">Dodge</a><a class="catalog__link" href="#">Dodge</a></div>
+              </div>
+            </div>
+            <div class="catalogs__row"> 
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">F</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">FAW</a><a class="catalog__link" href="#">Fiat Professional </a><a class="catalog__link" href="#">Fiat</a><a class="catalog__link" href="#">Ford</a><a class="catalog__link" href="#">Foton груз-ки</a></div>
+              </div>
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">G</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">BMW Motorrad </a><a class="catalog__link" href="#">BMW</a><a class="catalog__link" href="#">Baw</a><a class="catalog__link" href="#">Buick</a></div>
+              </div>
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">C</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">Cadillac </a><a class="catalog__link" href="#">Chevrolet</a><a class="catalog__link" href="#">Chrysler</a><a class="catalog__link" href="#">Citroen</a></div>
+              </div>
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">D</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">Dacia</a><a class="catalog__link" href="#">Daewoo</a><a class="catalog__link" href="#">Dodge</a><a class="catalog__link" href="#">Dodge</a></div>
+              </div>
+            </div>
+            <div class="catalogs__row"> 
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">K</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">FAW</a><a class="catalog__link" href="#">Fiat Professional </a><a class="catalog__link" href="#">Fiat</a></div>
+              </div>
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">G</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">BMW Motorrad </a><a class="catalog__link" href="#">BMW</a><a class="catalog__link" href="#">Baw</a><a class="catalog__link" href="#">Buick</a></div>
+              </div>
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">C</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">Cadillac </a><a class="catalog__link" href="#">Chevrolet</a><a class="catalog__link" href="#">Chrysler</a><a class="catalog__link" href="#">Citroen</a></div>
+              </div>
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">D</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">Dacia</a><a class="catalog__link" href="#">Daewoo</a><a class="catalog__link" href="#">Dodge</a><a class="catalog__link" href="#">Dodge</a></div>
+              </div>
+            </div>
+            <div class="catalogs__row"> 
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">O</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">FAW</a><a class="catalog__link" href="#">Fiat Professional </a><a class="catalog__link" href="#">Fiat</a><a class="catalog__link" href="#">Ford</a><a class="catalog__link" href="#">Foton груз-ки</a><a class="catalog__link" href="#">Foton груз-ки</a><a class="catalog__link" href="#">Foton груз-ки</a></div>
+              </div>
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">G</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">BMW Motorrad </a><a class="catalog__link" href="#">BMW</a><a class="catalog__link" href="#">Baw</a><a class="catalog__link" href="#">Buick</a></div>
+              </div>
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">C</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">Cadillac </a><a class="catalog__link" href="#">Chevrolet</a><a class="catalog__link" href="#">Chrysler</a><a class="catalog__link" href="#">Citroen</a></div>
+              </div>
+              <div class="catalogs__item"> 
+                <div class="catalogs__symbol">D</div>
+                <div class="catalogs__links"><a class="catalog__link" href="#">Dacia</a><a class="catalog__link" href="#">Daewoo</a><a class="catalog__link" href="#">Dodge</a><a class="catalog__link" href="#">Dodge</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container"> 
+        <div class="footer__top">
+          <div class="footer__item"> 
+            <div class="footer__title">Меню компании</div>
+            <div class="footer__links">
+              <div class="footer__link"><a href="#">Что такое Oner</a></div>
+              <div class="footer__link"><a href="#">Реквизиты и информация</a></div>
+              <div class="footer__link"><a href="#">Новости</a></div>
+              <div class="footer__link"><a href="#">Вакансии</a></div>
+              <div class="footer__link"><a href="#">Поставщикам</a></div>
+              <div class="footer__link"><a href="#">Контакты</a></div>
+            </div>
+          </div>
+          <div class="footer__item"> 
+            <div class="footer__title">Каталоги</div>
+            <div class="footer__links">
+              <div class="footer__link"><a href="catalog.html">Оригинальные запчасти</a></div>
+              <div class="footer__link"><a href="#">Неоригинальные запчасти</a></div>
+              <div class="footer__link"><a href="#">Запчасти для ТО</a></div>
+              <div class="footer__link"><a href="#">Автомасла</a></div>
+              <div class="footer__link"><a href="#">Аккумуляторы</a></div>
+              <div class="footer__link"><a href="#">Распродажа</a></div>
+            </div>
+          </div>
+          <div class="footer__item"> 
+            <div class="footer__title">Помощь</div>
+            <div class="footer__links">
+              <div class="footer__link"><a href="#">Часто задаваемые вопросы</a></div>
+              <div class="footer__link"><a href="#">Консультация Online</a></div>
+              <div class="footer__link"><a href="#">Оплата заказа</a></div>
+              <div class="footer__link"><a href="#">Доставка заказа</a></div>
+              <div class="footer__link"><a href="#">Возврат товара</a></div>
+              <div class="footer__link"><a href="#">Забыл пароль</a></div>
+            </div>
+          </div>
+          <div class="footer__item"> 
+            <div class="footer__title">Товары и бренды</div>
+            <div class="footer__links">
+              <div class="footer__link"><a href="#">Список брендов</a></div>
+              <div class="footer__link"><a href="#">Популярные товары</a></div>
+              <div class="footer__link"><a href="#">Наличие на складах</a></div>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__info"><a class="consultation" href="#"> 
+                <div class="consultation__ico">
+                      <svg class="svgsprite _chat">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#chat"></use>
+                      </svg>
+                </div>
+                <div class="consultation__info">
+                  <div class="consultation__title">Консультация Online</div>
+                  <div class="consultation__text">Задавайте вопросы</div>
+                </div></a>
+              <div class="footer__status">Сервис работает в обычном режиме</div>
+            </div>
+            <div class="footer__docs --visible-tablet"><a class="footer__docs-link" href="#">Оферта</a><a class="footer__docs-link" href="#">Конфиденциальность</a></div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="copyright">Copyright © ООО «Oner.ru» 2021. All rights reserved.</div>
+          <div class="footer__pay">
+            <p class="footer__pay-text">Принимаем к оплате</p>
+            <div class="footer__pay-ico"> 
+                  <svg class="svgsprite _visa">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#visa"></use>
+                  </svg>
+            </div>
+            <div class="footer__pay-ico"> 
+                  <svg class="svgsprite _mastercard">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#mastercard"></use>
+                  </svg>
+            </div>
+            <div class="footer__pay-ico"> 
+                  <svg class="svgsprite _mir">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#mir"></use>
+                  </svg>
+            </div>
+          </div>
+          <div class="footer__docs --remove-tablet"> <a class="footer__docs-link" href="#">Оферта</a><a class="footer__docs-link" href="#">Конфиденциальность</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/vendors~main.bundle.js"></script>
+    <script src="assets/js/main.bundle.js?v=1.2.3"></script>
+  </body>
+</html>
