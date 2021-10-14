@@ -19,6 +19,7 @@ They might well be outsourced to an external stylesheet of course.
 -->
 
 <style type="text/css">
+	.svg-add-dims { width: 32px; height: 32px; }
 	.svg-arrow-down-purple-dims { width: 20px; height: 20px; }
 	.svg-arrow-white-dims { width: 32px; height: 32px; }
 	.svg-basket-dims { width: 24px; height: 24px; }
@@ -41,6 +42,7 @@ They might well be outsourced to an external stylesheet of course.
 	.svg-chat-dims { width: 20px; height: 20px; }
 	.svg-crumb-arrow-dims { width: 6px; height: 8px; }
 	.svg-days-dims { width: 18px; height: 18px; }
+	.svg-delete-dims { width: 16px; height: 18px; }
 	.svg-diller-dims { width: 14px; height: 12px; }
 	.svg-filter-dims { width: 20px; height: 20px; }
 	.svg-i-dims { width: 20px; height: 20px; }
@@ -49,8 +51,12 @@ They might well be outsourced to an external stylesheet of course.
 	.svg-menu-dims { width: 20px; height: 20px; }
 	.svg-minus-dims { width: 16px; height: 16px; }
 	.svg-mir-dims { width: 54px; height: 16px; }
+	.svg-pay_1-dims { width: 24px; height: 24px; }
+	.svg-pay_2-dims { width: 24px; height: 24px; }
+	.svg-pay_3-dims { width: 24px; height: 24px; }
 	.svg-phone-dims { width: 24px; height: 24px; }
 	.svg-plus-dims { width: 16px; height: 16px; }
+	.svg-promocode-arrow-dims { width: 20px; height: 20px; }
 	.svg-provider-catalog-dims { width: 48px; height: 48px; }
 	.svg-search-dims { width: 24px; height: 24px; }
 	.svg-slider-next-dims { width: 24px; height: 24px; }
@@ -58,6 +64,7 @@ They might well be outsourced to an external stylesheet of course.
 	.svg-star-dims { width: 12px; height: 12px; }
 	.svg-user-dims { width: 24px; height: 24px; }
 	.svg-visa-dims { width: 47px; height: 16px; }
+	.svg-x-dims { width: 20px; height: 20px; }
 </style>
 <!--
 ====================================================================================================
@@ -80,6 +87,7 @@ for further details on how to create this embeddable sprite variant.
 -->
 
 <svg width="0" height="0" style="position:absolute">
+		<symbol fill="none" viewBox="0 0 32 32" id="add" xmlns="http://www.w3.org/2000/svg"><path d="M16 8v16M24 16H8" stroke="#55556D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 		<symbol fill="none" viewBox="0 0 20 20" id="arrow-down-purple" xmlns="http://www.w3.org/2000/svg"><path d="M6.667 8.333L10 11.667l3.333-3.334" stroke="#6B59CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 		<symbol fill="none" viewBox="0 0 32 32" id="arrow-white" xmlns="http://www.w3.org/2000/svg"><path d="M25.333 16H6.667M18.667 22.667L25.333 16M18.667 9.333L25.333 16" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 		<symbol fill="none" viewBox="0 0 24 24" id="basket" xmlns="http://www.w3.org/2000/svg"><path d="M5.874 7l1.535 7.246a2 2 0 002.156 1.576l6.816-.682a2 2 0 001.741-1.505l1.348-5.392A1 1 0 0018.5 7h-8.313M5.874 7l-.65-3H3.5M17.11 19.267a.366.366 0 10.004.732.366.366 0 00-.005-.732M8.697 19.267a.363.363 0 00-.364.366.366.366 0 10.364-.366"/></symbol>
@@ -102,6 +110,7 @@ for further details on how to create this embeddable sprite variant.
 		<symbol fill="none" viewBox="0 0 20 20" id="chat" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.98 4.725c.241-1.404 1.357-2.436 2.766-2.65 1.349-.206 3.2-.408 5.254-.408 2.054 0 3.905.202 5.254.407 1.409.215 2.525 1.247 2.766 2.65.169.98.313 2.222.313 3.61 0 1.387-.144 2.63-.313 3.608-.241 1.404-1.357 2.436-2.766 2.65a35.746 35.746 0 01-4.734.404l-5.096 3.011a.833.833 0 01-1.257-.717v-2.837c-1.128-.375-1.98-1.306-2.187-2.511a21.418 21.418 0 01-.313-3.609c0-1.387.144-2.63.313-3.608zM5 6.667c0-.46.373-.834.833-.834h8.334a.833.833 0 110 1.667H5.833A.833.833 0 015 6.667zM5 10c0-.46.373-.833.833-.833h3.334a.833.833 0 010 1.666H5.833A.833.833 0 015 10z" fill="#fff"/></symbol>
 		<symbol fill="none" viewBox="0 0 6 8" id="crumb-arrow" xmlns="http://www.w3.org/2000/svg"><path d="M1.667 6.667L4.333 4 1.667 1.333" stroke="#7A7680" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 		<symbol fill="none" viewBox="0 0 18 18" id="days" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.244 4.756a6.002 6.002 0 11-8.488 8.488 6.002 6.002 0 018.488-8.488" fill="#38A865"/><path d="M13.244 4.756a6.002 6.002 0 11-8.488 8.488 6.002 6.002 0 018.488-8.488" stroke="#38A865" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.111 7.666l-2.667 2.668-1.778-1.779-1.778 1.779" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+		<symbol viewBox="0 0 16 18" id="delete" xmlns="http://www.w3.org/2000/svg"><path d="M3.749 4.417a.75.75 0 00-1.5 0h1.5zM13.753 4a.75.75 0 00-1.5 0h1.5zm-3.335 3.333a.75.75 0 00-1.5 0h1.5zm-1.5 5.835a.75.75 0 001.5 0h-1.5zM7.083 7.333a.75.75 0 00-1.5 0h1.5zm-1.5 5.835a.75.75 0 001.5 0h-1.5zm-3.835-9.92a.75.75 0 100 1.5v-1.5zm12.505 1.5a.75.75 0 000-1.5v1.5zM3.954 3.76a.75.75 0 101.423.474l-1.423-.474zM5.12 2.637l.712.237-.712-.237zm1.583-1.14v.75-.75zm2.598 0v.75-.75zm1.583 1.14l.712-.236-.712.236zm-.26 1.597a.75.75 0 001.424-.473l-1.423.473zm-8.374.183v10.419h1.5V4.416h-1.5zm0 10.419a2.417 2.417 0 002.417 2.417v-1.5a.917.917 0 01-.917-.917h-1.5zm2.417 2.417h6.67v-1.5h-6.67v1.5zm6.67 0a2.417 2.417 0 002.417-2.417h-1.5c0 .506-.411.917-.918.917v1.5zm2.417-2.417V4h-1.5v10.836h1.5zM8.918 7.333v5.835h1.5V7.333h-1.5zm-3.335 0v5.835h1.5V7.333h-1.5zM1.748 4.748h12.505v-1.5H1.748v1.5zm3.63-.513l.453-1.36L4.408 2.4l-.454 1.36 1.423.475zm.453-1.36a.917.917 0 01.87-.628l.001-1.5c-1.041 0-1.965.666-2.294 1.653l1.423.474zm.87-.628H9.3v-1.5H6.702v1.5zm2.6 0c.395 0 .746.252.87.627l1.424-.474A2.417 2.417 0 009.3.747l.001 1.5zm.87.627l.453 1.36 1.423-.473-.452-1.36-1.423.473z"/></symbol>
 		<symbol fill="none" viewBox="0 0 14 12" id="diller" xmlns="http://www.w3.org/2000/svg"><path d="M1.615 1.314L4.235 3.1 6.458.489A.667.667 0 017.5.5l2.196 2.6 2.548-1.791a.666.666 0 011.095.6l-.93 7.121H1.615l-1.1-7.117a.667.667 0 011.1-.6zm.051 8.886h10.667v.955a.667.667 0 01-.667.667H2.333a.667.667 0 01-.667-.667V10.2z" fill="#FB6019"/></symbol>
 		<symbol fill="none" viewBox="0 0 20 20" id="filter" xmlns="http://www.w3.org/2000/svg"><path d="M3.333 10h8.334M3.333 5h13.334M3.333 15h3.334" stroke="#3D3D4B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 		<symbol fill="none" viewBox="0 0 20 20" id="i" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 17.5A7.5 7.5 0 012.5 10 7.5 7.5 0 0110 2.5a7.5 7.5 0 017.5 7.5 7.5 7.5 0 01-7.5 7.5z"/><path d="M10 14.167V10h-.833M9.79 6.667a.208.208 0 10.002.417.208.208 0 00-.001-.417"/></symbol>
@@ -110,15 +119,20 @@ for further details on how to create this embeddable sprite variant.
 		<symbol fill="none" viewBox="0 0 20 20" id="menu" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.167 10.833a.833.833 0 110-1.666.833.833 0 010 1.666zM10 10.833a.833.833 0 110-1.666.833.833 0 010 1.666zM15.833 10.833a.833.833 0 110-1.666.833.833 0 010 1.666zM4.167 16.667a.833.833 0 110-1.667.833.833 0 010 1.667zM10 16.667A.833.833 0 1110 15a.833.833 0 010 1.667zM15.833 16.667a.833.833 0 110-1.667.833.833 0 010 1.667zM4.167 5a.833.833 0 110-1.666.833.833 0 010 1.666zM10 5a.833.833 0 110-1.666A.833.833 0 0110 5zM15.833 5a.833.833 0 110-1.666.833.833 0 010 1.666z" fill="#fff" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 		<symbol fill="none" viewBox="0 0 16 16" id="minus" xmlns="http://www.w3.org/2000/svg"><path d="M12 8H4" stroke="#92979E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 		<symbol fill="none" viewBox="0 0 54 16" id="mir" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.234.828C5.71.825 7.126.698 7.725 2.73a734.938 734.938 0 011.93 6.727h.36a1340.91 1340.91 0 011.951-6.727c.606-2.053 2.12-1.9 2.727-1.9h4.674v14.6h-4.764V6.824h-.32l-2.655 8.605H8.043L5.387 6.818h-.32v8.61H.304V.829h4.93zm20.975 0v8.61h.38l3.23-7.08C30.446.95 31.783.828 31.783.828h4.61v14.6H31.53v-8.61h-.38l-3.168 7.08c-.627 1.403-2.027 1.53-2.027 1.53h-4.61V.829h4.864zm26.996 6.938c-.679 1.93-2.81 3.313-5.168 3.313h-5.1v4.35H38.31V7.766h14.894zM48.26.827H38.067c.242 3.25 3.03 6.033 5.916 6.033h9.541c.55-2.702-1.344-6.033-5.266-6.033z" fill="#fff"/></symbol>
+		<symbol fill="none" viewBox="0 0 24 24" id="pay_1" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h18M9.57 13H7" stroke="#1B1D1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M18 19H6a3 3 0 01-3-3V8a3 3 0 013-3h12a3 3 0 013 3v8a3 3 0 01-3 3z" stroke="#1B1D1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+		<symbol fill="none" viewBox="0 0 24 24" id="pay_2" xmlns="http://www.w3.org/2000/svg"><path d="M16 7H8M16.13 11H8" stroke="#1B1D1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M4 19.191V4a1 1 0 011-1h14a1 1 0 011 1v15.191a.5.5 0 01-.724.447l-1.943-.972-2.443 1.222a.502.502 0 01-.447 0L12 18.667l-2.443 1.222a.502.502 0 01-.447 0l-2.443-1.222-1.943.972A.5.5 0 014 19.191z" stroke="#1B1D1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 15H8" stroke="#1B1D1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+		<symbol fill="none" viewBox="0 0 24 24" id="pay_3" xmlns="http://www.w3.org/2000/svg"><path d="M17 20H7V7h10v13M10 10h4M14 13h-4M10 16h3" stroke="#1B1D1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 11h2a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2" stroke="#1B1D1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 		<symbol fill="none" viewBox="0 0 24 24" id="phone" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M18.965 16.61l-1.173-1.173a1.5 1.5 0 00-2.121 0l-.922.922a.71.71 0 01-.784.158c-1.336-.585-2.656-1.472-3.833-2.649a12.645 12.645 0 01-2.642-3.817.733.733 0 01.162-.811l.826-.826c.671-.671.671-1.62.085-2.206L7.39 5.035a2 2 0 00-2.828 0l-.652.651c-.741.741-1.05 1.81-.85 2.87.494 2.613 2.012 5.474 4.461 7.923 2.449 2.449 5.31 3.967 7.923 4.461 1.06.2 2.129-.109 2.87-.85l.651-.651a2 2 0 000-2.829v0z" stroke="#6B59CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path opacity=".5" d="M13 6.991A3.944 3.944 0 0117.009 11M13 2.964c2.056 0 4.113.785 5.682 2.354A8.012 8.012 0 0121.036 11" stroke="#6B59CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 		<symbol fill="none" viewBox="0 0 16 16" id="plus" xmlns="http://www.w3.org/2000/svg"><path d="M8 4v8M12 8H4" stroke="#92979E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+		<symbol fill="none" viewBox="0 0 20 20" id="promocode-arrow" xmlns="http://www.w3.org/2000/svg"><path d="M15.834 10H4.167M11.667 14.167L15.834 10M11.667 5.833L15.834 10"/></symbol>
 		<symbol fill="none" viewBox="0 0 48 48" id="provider-catalog" xmlns="http://www.w3.org/2000/svg"><path d="M6 18v-6c0-2.21 1.79-4 4-4h28c2.21 0 4 1.79 4 4v24c0 2.21-1.79 4-4 4H26M18 40l-.502-1.26a4.608 4.608 0 00-1.152-1.678v0a4.615 4.615 0 00-3.138-1.23H8.792c-1.164 0-2.284.44-3.138 1.23v0a4.608 4.608 0 00-1.152 1.678L4 40" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.474 25.026a3.502 3.502 0 010 4.95 3.502 3.502 0 01-4.95 0 3.502 3.502 0 010-4.95 3.498 3.498 0 014.95 0M22 30V18M28 30v-6.64M34 30V19.1" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 		<symbol viewBox="0 0 24 24" id="search" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 11a7 7 0 1114 0 7 7 0 01-14 0zm7-9a9 9 0 105.618 16.032l3.675 3.675a1 1 0 001.414-1.414l-3.675-3.675A9 9 0 0011 2z"/></symbol>
-		<symbol fill="none" viewBox="0 0 24 24" id="slider-next" xmlns="http://www.w3.org/2000/svg"><path d="M10 16l4-4-4-4" stroke="#505255" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-		<symbol fill="none" viewBox="0 0 24 24" id="slider-prev" xmlns="http://www.w3.org/2000/svg"><path d="M14 16l-4-4 4-4" stroke="#505255" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+		<symbol fill="none" viewBox="0 0 24 24" id="slider-next" xmlns="http://www.w3.org/2000/svg"><path d="M10 16l4-4-4-4"/></symbol>
+		<symbol fill="none" viewBox="0 0 24 24" id="slider-prev" xmlns="http://www.w3.org/2000/svg"><path d="M14 16l-4-4 4-4"/></symbol>
 		<symbol viewBox="0 0 12 12" id="star" xmlns="http://www.w3.org/2000/svg"><path d="M6.712.59L8.216 3.76l3.079.327a.788.788 0 01.417 1.398L9.257 7.504l.76 3.394a.788.788 0 01-1.178.846L6 10.017l-2.841 1.726a.789.789 0 01-1.179-.846l.763-3.393L.288 5.486A.788.788 0 01.706 4.09l3.078-.326L5.288.59a.789.789 0 011.424 0z"/></symbol>
 		<symbol fill="none" viewBox="0 0 24 24" id="user" xmlns="http://www.w3.org/2000/svg"><path d="M12 14.5c3.47 0 5.464.853 6.593 1.716 1.215.93 1.407 2.559 1.407 4.088C20 21.24 19.24 22 18.304 22H5.696C4.76 22 4 21.24 4 20.304c0-1.529.192-3.159 1.407-4.088C6.536 15.353 8.529 14.5 12 14.5z" fill="#5946D7" fill-opacity=".1" stroke="#6B59CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="7" r="4" stroke="#6B59CC" stroke-width="1.5"/></symbol>
 		<symbol fill="none" viewBox="0 0 47 16" id="visa" xmlns="http://www.w3.org/2000/svg"><path d="M20.202 15.73h-3.776l2.362-14.64h3.776l-2.362 14.64zM33.892 1.448a9.287 9.287 0 00-3.387-.623c-3.73 0-6.355 1.993-6.372 4.843-.03 2.103 1.88 3.27 3.31 3.972 1.461.716 1.958 1.184 1.958 1.823-.015.98-1.18 1.433-2.268 1.433-1.508 0-2.316-.234-3.543-.78l-.498-.233-.528 3.286c.886.405 2.517.764 4.212.78 3.962 0 6.542-1.963 6.573-5 .015-1.667-.994-2.944-3.17-3.987-1.321-.67-2.13-1.122-2.13-1.807.015-.623.684-1.262 2.175-1.262a6.404 6.404 0 012.813.56l.342.156.513-3.161zM38.911 10.544c.311-.841 1.508-4.096 1.508-4.096-.015.031.31-.857.497-1.402l.264 1.262s.715 3.504.87 4.236h-3.139zm4.662-9.454h-2.921c-.9 0-1.585.265-1.974 1.215l-5.61 13.425h3.963l.793-2.196h4.849c.108.514.45 2.196.45 2.196h3.497L43.573 1.09zM13.271 1.09l-3.698 9.983-.404-2.024C8.485 6.713 6.34 4.174 3.947 2.912l3.388 12.803h3.994L17.264 1.09H13.27z" fill="#fff"/><path d="M6.138 1.09H.062L0 1.386C4.74 2.601 7.879 5.53 9.168 9.05l-1.32-6.728c-.218-.935-.886-1.2-1.71-1.23z" fill="#B1B4B9"/></symbol>
+		<symbol fill="none" viewBox="0 0 20 20" id="x" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" rx="4" fill="#fff"/><path d="M7.334 7.333l5.333 5.334M12.667 7.333l-5.333 5.334" stroke="#7A7680" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
 
 <!--
@@ -148,6 +162,17 @@ embedded above. They may be styled via CSS.
 			<h3>A) Inline SVG with embedded sprite</h3>
 			<ul>
 
+				<li title="add">
+					<div class="icon-box">
+						
+						<!-- add -->
+						<svg class="svg-add-dims">
+							<use xlink:href="#add"></use>
+						</svg>
+						
+					</div>
+					<h2>add</h2>
+				</li>
 				<li title="arrow-down-purple">
 					<div class="icon-box">
 						
@@ -390,6 +415,17 @@ embedded above. They may be styled via CSS.
 					</div>
 					<h2>days</h2>
 				</li>
+				<li title="delete">
+					<div class="icon-box">
+						
+						<!-- delete -->
+						<svg class="svg-delete-dims">
+							<use xlink:href="#delete"></use>
+						</svg>
+						
+					</div>
+					<h2>delete</h2>
+				</li>
 				<li title="diller">
 					<div class="icon-box">
 						
@@ -478,6 +514,39 @@ embedded above. They may be styled via CSS.
 					</div>
 					<h2>mir</h2>
 				</li>
+				<li title="pay_1">
+					<div class="icon-box">
+						
+						<!-- pay_1 -->
+						<svg class="svg-pay_1-dims">
+							<use xlink:href="#pay_1"></use>
+						</svg>
+						
+					</div>
+					<h2>pay_1</h2>
+				</li>
+				<li title="pay_2">
+					<div class="icon-box">
+						
+						<!-- pay_2 -->
+						<svg class="svg-pay_2-dims">
+							<use xlink:href="#pay_2"></use>
+						</svg>
+						
+					</div>
+					<h2>pay_2</h2>
+				</li>
+				<li title="pay_3">
+					<div class="icon-box">
+						
+						<!-- pay_3 -->
+						<svg class="svg-pay_3-dims">
+							<use xlink:href="#pay_3"></use>
+						</svg>
+						
+					</div>
+					<h2>pay_3</h2>
+				</li>
 				<li title="phone">
 					<div class="icon-box">
 						
@@ -499,6 +568,17 @@ embedded above. They may be styled via CSS.
 						
 					</div>
 					<h2>plus</h2>
+				</li>
+				<li title="promocode-arrow">
+					<div class="icon-box">
+						
+						<!-- promocode-arrow -->
+						<svg class="svg-promocode-arrow-dims">
+							<use xlink:href="#promocode-arrow"></use>
+						</svg>
+						
+					</div>
+					<h2>promocode-arrow</h2>
 				</li>
 				<li title="provider-catalog">
 					<div class="icon-box">
@@ -577,6 +657,17 @@ embedded above. They may be styled via CSS.
 					</div>
 					<h2>visa</h2>
 				</li>
+				<li title="x">
+					<div class="icon-box">
+						
+						<!-- x -->
+						<svg class="svg-x-dims">
+							<use xlink:href="#x"></use>
+						</svg>
+						
+					</div>
+					<h2>x</h2>
+				</li>
 			</ul>
 
 <!--
@@ -598,6 +689,17 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 			<h3>B) Inline SVG with external sprite (IE 9-11 with polyfill only)</h3>
 			<ul>
 				
+				<li title="add">
+					<div class="icon-box">
+						
+						<!-- add -->
+						<svg class="svg-add-dims">
+							<use xlink:href="svgsprites.svg#add"></use>
+						</svg>
+						
+					</div>
+					<h2>add</h2>
+				</li>
 				<li title="arrow-down-purple">
 					<div class="icon-box">
 						
@@ -840,6 +942,17 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 					</div>
 					<h2>days</h2>
 				</li>
+				<li title="delete">
+					<div class="icon-box">
+						
+						<!-- delete -->
+						<svg class="svg-delete-dims">
+							<use xlink:href="svgsprites.svg#delete"></use>
+						</svg>
+						
+					</div>
+					<h2>delete</h2>
+				</li>
 				<li title="diller">
 					<div class="icon-box">
 						
@@ -928,6 +1041,39 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 					</div>
 					<h2>mir</h2>
 				</li>
+				<li title="pay_1">
+					<div class="icon-box">
+						
+						<!-- pay_1 -->
+						<svg class="svg-pay_1-dims">
+							<use xlink:href="svgsprites.svg#pay_1"></use>
+						</svg>
+						
+					</div>
+					<h2>pay_1</h2>
+				</li>
+				<li title="pay_2">
+					<div class="icon-box">
+						
+						<!-- pay_2 -->
+						<svg class="svg-pay_2-dims">
+							<use xlink:href="svgsprites.svg#pay_2"></use>
+						</svg>
+						
+					</div>
+					<h2>pay_2</h2>
+				</li>
+				<li title="pay_3">
+					<div class="icon-box">
+						
+						<!-- pay_3 -->
+						<svg class="svg-pay_3-dims">
+							<use xlink:href="svgsprites.svg#pay_3"></use>
+						</svg>
+						
+					</div>
+					<h2>pay_3</h2>
+				</li>
 				<li title="phone">
 					<div class="icon-box">
 						
@@ -949,6 +1095,17 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 						
 					</div>
 					<h2>plus</h2>
+				</li>
+				<li title="promocode-arrow">
+					<div class="icon-box">
+						
+						<!-- promocode-arrow -->
+						<svg class="svg-promocode-arrow-dims">
+							<use xlink:href="svgsprites.svg#promocode-arrow"></use>
+						</svg>
+						
+					</div>
+					<h2>promocode-arrow</h2>
 				</li>
 				<li title="provider-catalog">
 					<div class="icon-box">
@@ -1027,6 +1184,17 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 					</div>
 					<h2>visa</h2>
 				</li>
+				<li title="x">
+					<div class="icon-box">
+						
+						<!-- x -->
+						<svg class="svg-x-dims">
+							<use xlink:href="svgsprites.svg#x"></use>
+						</svg>
+						
+					</div>
+					<h2>x</h2>
+				</li>
 			</ul>
 
 <!--
@@ -1035,7 +1203,7 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 
 		</section>
 		<footer>
-			<p>Generated at Mon, 11 Oct 2021 10:22:28 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+			<p>Generated at Thu, 14 Oct 2021 07:03:49 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
 		</footer>
 	</body>
 </html>
